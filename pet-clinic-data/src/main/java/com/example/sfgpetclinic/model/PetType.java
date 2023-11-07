@@ -1,7 +1,13 @@
 package com.example.sfgpetclinic.model;
 
-public class PetType extends BaseEntity {
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
+@Entity
+@Table(name = "types")
+public class PetType extends BaseEntity {
+    @Column(name = "first_name")
     private String name;
 
     public String getName() {
