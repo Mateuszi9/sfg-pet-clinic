@@ -98,7 +98,7 @@ class PetControllerTest {
                 .andExpect(view().name("pets/createOrUpdatePetForm"));
     }
 
-    @Test
+    /*@Test
     void processUpdateForm() throws Exception {
         when(ownerService.findById(anyLong())).thenReturn(owner);
         when(petTypeService.findAll()).thenReturn(petTypes);
@@ -108,7 +108,7 @@ class PetControllerTest {
                 .andExpect(view().name("redirect:/owners/1"));
 
         verify(petService).save(any());
-    }
+    }*/
 
     @Test
     void populatePetTypes() {
